@@ -84,3 +84,30 @@ y2 = [1,3,5,7]
 
 plt.bar(x2,y2,color = 'r')
 plt.show()
+
+plt.bar(["Male Literacy", "Female Literacy"], [90,95])
+plt.show()
+
+plt.bar(['Economy Class', 'Business Class','First Class'],[95,74,51])
+plt.show()
+
+x=[]
+y=[]
+
+for i in range(5):
+    n = int(input("What value do you want x to be "))
+    x.append(n)
+
+print(x)
+
+for i in range(5):
+    yval = (x[i]*4) + 10
+    y.append(yval)
+
+print(y)
+
+plt.plot(x,y,'r--')
+plt.title("Custom Equation")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.show()
